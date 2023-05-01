@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header header--player">
+        <button class="header__btn header__btn--player" type="button">
+            <i class="fa-solid fa-arrow-left"></i>
+        </button>
+        <h1 class="header__title">Now playing</h1>
+    </header>
+    <main class="main">
+        <section class="player-section">
+            <h2 class="player-section__title">Now playing</h2>
+            <div class="player">
+                <div class="player__cover-container">
+                    <div class="player__cover-wrapper">
+                        <img class="player__cover" src="https://picsum.photos/300" alt="album cover">
+                    </div>
+                </div>
+                <div class="player__info">
+                <h3 class="player__title">Riverside</h3>
+                    <div>
+                        <h4 class="player__artist">Agnes Obel</h4>
+                        <h4 class="player__album">Philharmonics</h4>
+                    </div>
+                    <div class="player__progress">
+                        <input class="player__progress-bar" type="range" name="progress-bar" id="progress-bar">
+                    </div>
+                    <div class="player__duration">
+                        <p class="player__current-time">0:00</p>
+                        <p class="player__total-time">3:51</p>
+                    </div>
+                    <div>
+                        <button class="player__btn">
+                            <i class="fa-solid fa-backward"></i>
+                        </button>
+                        <button class="player__btn player__btn--play">
+                            <i class="fa-solid fa-play"></i>
+                            <i class="inactive fa-solid fa-pause"></i>
+                        </button>
+                        <button class="player__btn">
+                            <i class="fa-solid fa-forward"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="playlist-section">
+            <h2 class="playlist-section__title">Playlist</h2>
+            <ul class="playlist">
+                <li class="playlist__item playlist__item--active">
+                    <img class="playlist__cover" src="https://picsum.photos/100" alt="song cover n">
+                    
+                    <div>
+                        <p class="playlist__song">Track 1</p>
+                        <p class="playlist__artist">Artist name</p>
+                    </div>
+                    <span class="playlist__duration">3:51</span>
+                </li>
+                <li class="playlist__item">
+                    <img class="playlist__cover" src="https://picsum.photos/100" alt="song cover n">
+                    <div>
+                        <p class="playlist__song">Track 2</p>
+                        <p class="playlist__artist">Artist name very large</p>
+                    </div>
+                    <span class="playlist__duration">16:58</span>
+                </li>
+                <li class="playlist__item">
+                    <img class="playlist__cover" src="https://picsum.photos/100" alt="song cover n">
+                    <div>
+                        <p class="playlist__song">Track 2</p>
+                        <p class="playlist__artist">Artist name very large</p>
+                    </div>
+                    <span class="playlist__duration">16:58</span>
+                </li>
+                <li class="playlist__item">
+                    <img class="playlist__cover" src="https://picsum.photos/100" alt="song cover n">
+                    <div>
+                        <p class="playlist__song">Track 2</p>
+                        <p class="playlist__artist">Artist name very large</p>
+                    </div>
+                    <span class="playlist__duration">16:58</span>
+                </li>
+                <li class="playlist__item">
+                    <img class="playlist__cover" src="https://picsum.photos/100" alt="song cover n">
+                    <div>
+                        <p class="playlist__song">Track 2</p>
+                        <p class="playlist__artist">Artist name very large</p>
+                    </div>
+                    <span class="playlist__duration">16:58</span>
+                </li>
+                <li class="playlist__item">
+                    <img class="playlist__cover" src="https://picsum.photos/100" alt="song cover n">
+                    <div>
+                        <p class="playlist__song">Track 2</p>
+                        <p class="playlist__artist">Artist name very large</p>
+                    </div>
+                    <span class="playlist__duration">16:58</span>
+                </li>
+                <li class="playlist__item">
+                    <img class="playlist__cover" src="https://picsum.photos/100" alt="song cover n">
+                    <div>
+                        <p class="playlist__song">Track 2</p>
+                        <p class="playlist__artist">Artist name very large</p>
+                    </div>
+                    <span class="playlist__duration">16:58</span>
+                </li>
+                <li class="playlist__item">
+                    <img class="playlist__cover" src="https://picsum.photos/100" alt="song cover n">
+                    <div>
+                        <p class="playlist__song">Track 3 super extreme large</p>
+                        <p class="playlist__artist">Artist name</p>
+                    </div>
+                    <span class="playlist__duration">1:11</span>
+                </li>
+            </ul>
+        </section>
+    </main>
+</body>
+</html>
