@@ -48,7 +48,7 @@ body {
     background-color: var(--white);
 }
 
-.header__btn--player:hover {
+.header--player .header__btn:hover {
     background-color: var(--light);
 }
 
