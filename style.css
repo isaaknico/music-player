@@ -294,6 +294,7 @@ body {
 
     .player-section {
         height: calc(100vh - var(--header-h) - 2rem);
+        margin-bottom: 2rem;
         padding: 0 1rem 1rem;
         border-radius: var(--radius-m);
     }
